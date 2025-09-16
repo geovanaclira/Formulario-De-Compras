@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Compras</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">Lista de Compras <i class="fa-solid fa-cart-shopping"></i></h1>
+    </header>
+    <main>
+        <div class="container-form">
+            <form id="form">
+                <input type="text" id="item-input" placeholder="Digite o nome do item">
+                <button type="submit" id="adicionar-item">Adicionar</button>
+                <button type="button" id= "limpar-item">Limpar</button>
+                <button type="button" id="atualizar-item">Atualizar</button>
+            </form>
+        </div>
+
+        <div class="container-table">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Índice</th>
+                        <th>Item</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela">
+    
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="/js/script.js"></script>
+</body>
+</html>
