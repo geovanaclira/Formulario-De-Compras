@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #FFF1F1;
+    overflow: hidden;
+}
+
+.container-home {
+    display: flex;
+}
+
+.colum-image {
+    flex: 1;
+}
+
+.colum-image {
+    background-image: url("/img/img-cart.jpg");
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+    height: 100vh;
+}
+
+.colum-description {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-home {
+    text-align: center;
+    color: #0D1164;
+    font-size: 40px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.paragrahp-home {
+    margin: 10px 0px;
+    font-size: 20px;
+    color: #0D1164;
+}
+
+.link-hover {
+    margin: 15px 0px;
+    background-color: #640D5F;
+    padding: 10px;
+    border: solid 1px transparent;
+    border-radius: 6px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #FAF7F3;
+}
+
+.link-hover:hover {
+    background-color: #FAF7F3;
+    border: solid 1.5px #640D5F;
+    color: #0D1164;
+    transition:  0.5s ease;
+    font-weight: 400;
+}
+
