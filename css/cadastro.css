@@ -8,11 +8,11 @@
 
 body {
     font-family: "Montserrat", sans-serif;
-    background-color: #FAF7F3;
+    background-color: #ece6df;
 }
 
 header {
-    background-color: #0D1164;
+    background-color: #640D5F;
     padding: 8px 8px;
 }
 
@@ -21,7 +21,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-}
+} 
 
 .title-cadastro {
     color: #FAF7F3;
@@ -55,15 +55,69 @@ header {
 .nav a:hover::after {
     width: 100%;
 }
-   
+
+.container-form {
+    max-width: 640px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.title-container {
+    text-align: center;
+    font-size: 32px;
+    color: #640D5F;
+    margin: 10px auto;
+    padding: 8px 8px;
+}
+
+form label, form input, form button {
+    display: block;
+    color: #0D1164;
+    width: 100%;
+    outline: none;
+    margin-bottom: 14px;
+}
+
+form input {
+    font-size: 16px;
+    height: 38px;
+    padding: 0 16px;
+}
+
+input::placeholder {
+    color: #0D1164;
+}
+
+form button {
+    border: none;
+    border-radius: 6px;
+    background-color: #640D5F;
+    color: #FAF7F3;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+form button:hover {
+    background-color: #FAF7F3;
+    border: solid 1.5px #640D5F;
+    color: #0D1164;
+    transition:  0.5s ease;
+}
+
+/*    
 .container-form {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     margin-top: 15px;
-}
-
+} */
+/* 
 input {
     width: 300px;
     height: 34px;
@@ -139,4 +193,4 @@ tr, th {
     line-height: 32px;
     text-align: center;
 }
-
+  */

@@ -8,8 +8,7 @@
 
 body {
     font-family: "Montserrat", sans-serif;
-    background-color: #FAF7F3;
-    /* overflow: hidden; */
+    background-color: #ece6df;
 }
 
 .container-home {
@@ -21,7 +20,7 @@ body {
 }
 
 .colum-image {
-    background-image: url("/img/img-cart.jpg");
+    background-image: url("../img/img-cart.jpg");
     background-position: center;
     background-size: cover;
     max-width: 100%;
@@ -44,7 +43,7 @@ body {
     margin-bottom: 15px;
 }
 
-.paragrahp-home {
+.paragraph-home {
     margin: 10px 0px;
     font-size: 20px;
     color: #0D1164;
@@ -62,7 +61,7 @@ body {
 }
 
 .link-hover:hover {
-    background-color: #FAF7F3;
+    background-color: #ece6df;
     border: solid 1.5px #640D5F;
     color: #0D1164;
     transition:  0.5s ease;
