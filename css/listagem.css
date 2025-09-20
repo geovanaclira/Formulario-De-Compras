@@ -1,0 +1,24 @@
+.container-table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 24px;  /* 1.5em; */
+}
+
+tr, th {
+    padding: 10px;  /* 0.8em; */
+    font-size: 18px;
+    color: #640D5F;
+    border: solid 1px #640D5F;
+}
+
+#tabela {
+    line-height: 32px;
+    text-align: center;
+}
+  

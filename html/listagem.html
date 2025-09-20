@@ -4,8 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listagem dos Produtos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <link rel="stylesheet" href="../css/listagem.css">
 </head>
 <body>
+     <header>
+        <div class="container-header">
+            <h1 class="title-cadastro">Listagem Produto  <i class="fa-solid fa-cart-shopping"></i></h1>
+            <nav>
+                <ul class="nav">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="cadastro.html">Cadastro Produto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container-table">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Índice</th>
+                        <th>Nome</th>
+                        <th>Preço</th>
+                        <th>Categoria</th>
+                        <th>Origem</th>
+                        <th>Data de Validade</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela">
     
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="../js/listagem.js"></script>
 </body>
 </html>

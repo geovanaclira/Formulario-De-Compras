@@ -6,7 +6,6 @@ const tabela = document.getElementById('tabela')
 const limparBtn = document.getElementById('limpar-item')
 const atualizarBtn = document.getElementById('atualizar-item')
 
-
 form.addEventListener("submit", function(event) {
     event.preventDefault()
 
