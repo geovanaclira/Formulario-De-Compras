@@ -67,3 +67,45 @@ body {
     transition:  0.5s ease;
     font-weight: 400;
 }
+
+@media (max-width: 768px) {
+    .colum-image {
+        background-position: center right;
+    }
+
+    .title-home {
+        font-size: 1.4rem;
+        margin: 0 1rem;
+    }
+
+    .paragraph-home {
+        font-size: 1rem;
+        margin: 1rem 0.5rem;
+    }
+
+    .link-hover {
+        font-size: 1rem;
+        padding: 0.6rem;
+    }
+} 
+
+@media (max-width: 480px) {
+    .container-home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .colum-image {
+        display: none;
+    }
+
+    .colum-description {
+        flex: none;       
+        width: 100%;      
+        text-align: center; 
+        padding: 1rem;  
+    }
+
+}
