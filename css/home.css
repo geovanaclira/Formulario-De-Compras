@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -38,33 +38,32 @@ body {
 .title-home {
     text-align: center;
     color: #0D1164;
-    font-size: 40px;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1rem;
 }
 
 .paragraph-home {
-    margin: 10px 0px;
-    font-size: 20px;
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
     color: #0D1164;
 }
 
 .link-hover {
-    margin: 15px 0px;
+    margin: 1rem 0;
     background-color: #640D5F;
-    padding: 10px;
-    border: solid 1px transparent;
-    border-radius: 6px;
-    font-size: 18px;
+    padding: 0.7rem;
+    border: solid 0.1rem transparent;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
     text-decoration: none;
     color: #FAF7F3;
 }
 
 .link-hover:hover {
     background-color: #ece6df;
-    border: solid 1.5px #640D5F;
+    border: solid 0.1rem #640D5F;
     color: #0D1164;
     transition:  0.5s ease;
     font-weight: 400;
 }
-
