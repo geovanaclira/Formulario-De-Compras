@@ -1,35 +1,21 @@
-let listaCompras = []
-
 const form = document.getElementById('form')
-const inputItem = document.getElementById('item-input')
-const tabela = document.getElementById('tabela')
-const limparBtn = document.getElementById('limpar-item')
-const atualizarBtn = document.getElementById('atualizar-item')
 
 form.addEventListener("submit", function(event) {
     event.preventDefault()
 
-    const item = document.getElementById('item-input').value.trim()
+    const nome = document.getElementById('nome-input').value.trim()
+    const preco = document.getElementById('preco-input').value.trim()
+    const categoria = document.getElementById('categoria-input').value.trim()
+    const origem = document.getElementById('origem-input').value.trim()
+    const validade = document.getElementById('validade-input').value.trim()
 
-    if (item !== "") {
+    if (nome !== "" && preco !== "" && categoria !== "" && origem !== "" && validade !== "") {
+
+        let listaCompras = JSON.parse(localStorage.getItem("listaCompras")) || []
+        const item = {nome, preco, categoria, origem, validade}
         listaCompras.push(item)
-        atualizarLista()
+
+        localStorage.setItem("listaCompras", JSON.stringify(listaCompras))
         form.reset() 
     }
-})
-
-function atualizarLista() {
-    tabela.innerHTML = ""
-
-    listaCompras.forEach((listaCompras, index) => {
-        const novaLinha = document.createElement('tr')
-        novaLinha.innerHTML = `<td> ${index + 1} </td> <td>${listaCompras}`
-        tabela.appendChild(novaLinha)
-        form.reset()
-    })
-}
-
-limparBtn.addEventListener("click", () => {
-    listaCompras = []
-    tabela.innerHTML = ""
 })

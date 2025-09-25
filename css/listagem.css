@@ -7,18 +7,29 @@
 table {
     width: 80%;
     border-collapse: collapse;
-    margin-top: 24px;  /* 1.5em; */
+    margin-top: 1.5rem; 
 }
 
 tr, th {
-    padding: 10px;  /* 0.8em; */
-    font-size: 18px;
+    padding: 0.62rem; 
+    font-size: 1.2rem;
     color: #640D5F;
-    border: solid 1px #640D5F;
+    border: solid 0.1rem #640D5F;
 }
 
 #tabela {
-    line-height: 32px;
+    line-height: 2rem;
     text-align: center;
 }
-  
+
+@media (max-width: 768px) {
+    table {
+        width: 90%;
+        font-size: 0.9rem;
+    }
+
+    th, td {
+        padding: 0.4rem;
+    }
+}
+ 
