@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -13,32 +13,34 @@ body {
 
 header {
     background-color: #640D5F;
-    padding: 8px 8px;
+    padding: 0.5rem 0.5rem;
 }
 
 .container-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 0.8rem 1.2rem;
 } 
 
 .title-cadastro {
+    font-size: 2.2rem;
     color: #FAF7F3;
-    padding: 8px 0;
+    padding: 0.8rem 0;
 }
 
 .nav {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 1.5rem;
 }
 
 .nav a {
+    font-size: 1.1rem;
     position: relative;
     text-decoration: none;
     color: #FAF7F3;
-    padding: 5px 0;
+    padding: 0.5rem 0;
 }
 
 .nav a::after {
@@ -47,7 +49,7 @@ header {
     left: 0;
     bottom: 0;
     width: 0%;
-    height: 2px; 
+    height: 0.1rem; 
     background-color: #FAF7F3;
     transition: width 0.3s ease-in-out; 
 }
@@ -57,19 +59,19 @@ header {
 }
 
 .container-form {
-    max-width: 640px;
-    margin: 40px auto;
+    max-width: 40rem;
+    margin: 2.5rem auto;
     background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 1.25rem;
+    border-radius: 0.5rem;
 }
 
 .title-container {
     text-align: center;
-    font-size: 32px;
+    font-size: 2rem;
     color: #640D5F;
-    margin: 10px auto;
-    padding: 8px 8px;
+    margin: 0.6rem auto;
+    padding: 0.5rem 0.5rem;
 }
 
 form label, form input, form button {
@@ -77,13 +79,13 @@ form label, form input, form button {
     color: #0D1164;
     width: 100%;
     outline: none;
-    margin-bottom: 14px;
+    margin-bottom: 0.87rem;
 }
 
 form input {
-    font-size: 16px;
-    height: 38px;
-    padding: 0 16px;
+    font-size: 1rem;
+    height: 2.37rem;
+    padding: 0 1rem;
 }
 
 input::placeholder {
@@ -92,19 +94,76 @@ input::placeholder {
 
 form button {
     border: none;
-    border-radius: 6px;
+    border-radius: 0.37rem;
     background-color: #640D5F;
     color: #FAF7F3;
     font-family: "Montserrat", sans-serif;
-    font-size: 18px;
-    height: 50px;
+    font-size: 1.12rem;
+    height: 3.12rem;
     cursor: pointer;
-    margin-top: 30px;
+    margin-top: 1.87rem;
 }
 
 form button:hover {
     background-color: #FAF7F3;
-    border: solid 1.5px #640D5F;
+    border: solid 0.12rem #640D5F;
     color: #0D1164;
     transition:  0.5s ease;
+}
+
+@media (max-width: 768px) {
+    .title-cadastro {
+        font-size: 1.5rem;
+    }
+
+    .nav a  {
+        font-size: 1rem;
+    }
+
+    .container-form {
+        max-width: 35rem;
+    };
+
+    .title-container {
+        font-size: 1.5rem;
+    }
+
+    form input, form label {
+        font-size: 0.9rem;
+    }
+
+    form button {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container-header {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .container-form {
+        max-width: 80%;
+        margin: 1rem auto;
+        padding: 1rem;
+    }
+
+    .title-container {
+        font-size: 1.4rem;
+    }
+
+    form input, form label {
+        font-size: 0.8rem;
+    }
+
+    form button {
+        font-size: 0.9rem;
+    }
 }
