@@ -1,169 +1,173 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Montserrat", sans-serif;
-    background-color: #ece6df;
+  font-family: "Montserrat", sans-serif;
+  background-color: #ece6df;
 }
 
 header {
-    background-color: #640D5F;
-    padding: 0.5rem 0.5rem;
+  background-color: #640d5f;
+  padding: 0.5rem 0.5rem;
 }
 
 .container-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.8rem 1.2rem;
-} 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1.2rem;
+}
 
 .title-cadastro {
-    font-size: 2.5rem;
-    color: #FAF7F3;
-    padding: 0.8rem 0;
+  font-size: 2.5rem;
+  color: #faf7f3;
+  padding: 0.8rem 0;
 }
 
 .nav {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
 }
 
 .nav a {
-    font-size: 1.1rem;
-    position: relative;
-    text-decoration: none;
-    color: #FAF7F3;
-    padding: 0.5rem 0;
+  font-size: 1.1rem;
+  position: relative;
+  text-decoration: none;
+  color: #faf7f3;
+  padding: 0.5rem 0;
 }
 
 .nav a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0%;
-    height: 0.1rem; 
-    background-color: #FAF7F3;
-    transition: width 0.3s ease-in-out; 
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 0.1rem;
+  background-color: #faf7f3;
+  transition: width 0.3s ease-in-out;
 }
 
 .nav a:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
 .container-form {
-    max-width: 40rem;
-    margin: 2.5rem auto;
-    background-color: #fff;
-    padding: 1.25rem;
-    border-radius: 0.5rem;
+  max-width: 40rem;
+  margin: 2.5rem auto;
+  background-color: #fff;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
 }
 
 .title-container {
-    text-align: center;
-    font-size: 2rem;
-    color: #640D5F;
-    margin: 0.6rem auto;
-    padding: 0.5rem 0.5rem;
+  text-align: center;
+  font-size: 2rem;
+  color: #640d5f;
+  margin: 0.6rem auto;
+  padding: 0.5rem 0.5rem;
 }
 
-form label, form input, form button {
-    display: block;
-    color: #0D1164;
-    width: 100%;
-    outline: none;
-    margin-bottom: 0.87rem;
+form label,
+form input,
+form button {
+  display: block;
+  color: #0d1164;
+  width: 100%;
+  outline: none;
+  margin-bottom: 0.87rem;
 }
 
 form input {
-    font-size: 0.9rem;
-    height: 2.37rem;
-    padding: 0 1rem;
+  font-size: 0.9rem;
+  height: 2.37rem;
+  padding: 0 1rem;
 }
 
 input::placeholder {
-    color: #0D1164;
+  color: #0d1164;
 }
 
 form button {
-    border: none;
-    border-radius: 0.37rem;
-    background-color: #640D5F;
-    color: #FAF7F3;
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.12rem;
-    height: 3.12rem;
-    cursor: pointer;
-    margin-top: 1.87rem;
+  border: none;
+  border-radius: 0.37rem;
+  background-color: #640d5f;
+  color: #faf7f3;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.12rem;
+  height: 3.12rem;
+  cursor: pointer;
+  margin-top: 1.87rem;
 }
 
 form button:hover {
-    background-color: #FAF7F3;
-    border: solid 0.12rem #640D5F;
-    color: #0D1164;
-    transition:  0.5s ease;
+  background-color: #faf7f3;
+  border: solid 0.12rem #640d5f;
+  color: #0d1164;
+  transition: 0.5s ease;
 }
 
 @media (max-width: 768px) {
-    .title-cadastro {
-        font-size: 1.5rem;
-    }
+  .title-cadastro {
+    font-size: 1.5rem;
+  }
 
-    .nav a  {
-        font-size: 1rem;
-    }
+  .nav a {
+    font-size: 1rem;
+  }
 
-    .container-form {
-        max-width: 35rem;
-    }
+  .container-form {
+    max-width: 35rem;
+  }
 
-    .title-container {
-        font-size: 1.5rem;
-    }
+  .title-container {
+    font-size: 1.5rem;
+  }
 
-    form input, form label {
-        font-size: 0.9rem;
-    }
+  form input,
+  form label {
+    font-size: 0.9rem;
+  }
 
-    form button {
-        font-size: 1rem;
-    }
+  form button {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 480px) {
-    .container-header {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
+  .container-header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 
-    .nav {
-        flex-direction: column;
-        align-items: center;
-        gap: 0.5rem;
-    }
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
 
-    .container-form {
-        max-width: 80%;
-        margin: 1rem auto;
-        padding: 1rem;
-    }
+  .container-form {
+    max-width: 80%;
+    margin: 1rem auto;
+    padding: 1rem;
+  }
 
-    .title-container {
-        font-size: 1.4rem;
-    }
+  .title-container {
+    font-size: 1.4rem;
+  }
 
-    form input, form label {
-        font-size: 0.8rem;
-    }
+  form input,
+  form label {
+    font-size: 0.8rem;
+  }
 
-    form button {
-        font-size: 0.9rem;
-    }
+  form button {
+    font-size: 0.9rem;
+  }
 }
