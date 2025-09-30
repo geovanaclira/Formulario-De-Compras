@@ -10,7 +10,7 @@
 </head>
 <body>
      <header>
-        <div class="container-header">
+        <section class="container-header">
             <h1 class="title-cadastro">Listagem Produto  <i class="fa-solid fa-cart-shopping"></i></h1>
             <nav>
                 <ul class="nav">
@@ -18,14 +18,14 @@
                     <li><a href="cadastro.html">Cadastro Produto</a></li>
                 </ul>
             </nav>
-        </div>
+        </section>
     </header>
     <main>
-        <div class="container-table">
+        <section class="container-table">
             <table border="1">
                 <thead>
                     <tr>
-                        <th>Índice</th>
+                        <th>#</th>
                         <th>Nome</th>
                         <th>Preço</th>
                         <th>Categoria</th>
@@ -38,7 +38,34 @@
     
                 </tbody>
             </table>
-        </div>
+        </section>
+
+        <section id="modal" class="modal">
+            <div class="modal-content">
+                <h2>Editar Produto</h2>
+                <form id="form-editar">
+                    <label>Nome</label>
+                    <input type="text" id="edit-nome">
+
+                    <label>Preço</label>
+                    <input type="number" id="edit-preco">
+
+                    <label>Categoria</label>
+                    <input type="text" id="edit-categoria">
+
+                    <label>Origem</label>
+                    <input type="text" id="edit-origem">
+
+                    <label>Validade</label>
+                    <input type="date" id="edit-validade">
+
+                    <div class="botoes">
+                        <button type="submit">Salvar</button>
+                        <button type="button" onclick="fecharModal()">Cancelar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
 
     <script src="../js/listagem.js"></script>

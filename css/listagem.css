@@ -1,35 +1,124 @@
 .container-table {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 table {
-    width: 80%;
-    border-collapse: collapse;
-    margin-top: 1.5rem; 
+  width: 80%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
 }
 
-tr, th {
-    padding: 0.62rem; 
-    font-size: 1.2rem;
-    color: #640D5F;
-    border: solid 0.1rem #640D5F;
+tr,
+th {
+  padding: 0.62rem;
+  font-size: 1.2rem;
+  color: #640d5f;
+  border: solid 0.1rem #640d5f;
 }
 
 #tabela {
-    line-height: 2rem;
-    text-align: center;
+  line-height: 2rem;
+  text-align: center;
+}
+
+#tabela button {
+  padding: 6px 12px;
+  margin: 2px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn-editar {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.btn-editar:hover {
+  background-color: #2980b9;
+}
+
+.btn-excluir {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.btn-excluir:hover {
+  background-color: #c0392b;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  overflow-y: auto;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal h2 {
+  font-size: 24px;
+  color: #640d5f;
+  margin-bottom: 16px;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  max-width: 400px;
+  width: 90%;
+  border-radius: 8px;
+}
+
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content form button[type="submit"],
+.modal-content form button[type="button"] {
+  width: 48%;
+}
+
+.modal-content form .botoes {
+  display: flex;
+  justify-content: space-between;
 }
 
 @media (max-width: 768px) {
-    table {
-        width: 90%;
-        font-size: 0.9rem;
-    }
+  table {
+    width: 90%;
+    font-size: 0.9rem;
+  }
 
-    th, td {
-        padding: 0.4rem;
-    }
+  th,
+  td {
+    padding: 0.4rem;
+  }
+
+  #tabela button {
+    padding: 6px;
+    gap: 0;
+    justify-content: center;
+  }
+
+  #tabela button i {
+    margin: 0;
+  }
+
+  #tabela button span {
+    display: none;
+  }
 }
- 
