@@ -72,5 +72,5 @@ document.getElementById('form-editar').addEventListener('submit', function(e) {
     atualizarLista()
 })
 
-
 document.addEventListener("DOMContentLoaded", atualizarLista)
+
